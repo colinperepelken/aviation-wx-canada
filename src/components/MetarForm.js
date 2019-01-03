@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class MetarForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      value: '',
+      isSubmitted: false
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -14,18 +17,25 @@ class MetarForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('An airport code was submitted: ' + this.state.value);
+    if (!event.target.checkValidity()) {
+      // Form is invalid. Do nothing.
+      return;
+    }
     event.preventDefault();
+
+    this.setState({isSubmitted: true});
+
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form noValidate onSubmit={this.handleSubmit}>
         <label>
           ICAO:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input required type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
+        {this.state.isSubmitted && <p>Submitted</p>}
       </form>
     );
   }
