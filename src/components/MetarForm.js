@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class MetarForm extends React.Component {
   constructor(props) {
@@ -24,7 +24,6 @@ class MetarForm extends React.Component {
     event.preventDefault();
 
     this.setState({isSubmitted: true});
-
   }
 
   render() {
