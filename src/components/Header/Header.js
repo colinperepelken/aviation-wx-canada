@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavDropDown, Form, FormControl, Button} from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -10,16 +11,15 @@ class Header extends Component {
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous"/>
       <Navbar bg="primary" variant="dark">
-      <Navbar.Brand href="#home">Aviation WX Canada</Navbar.Brand>
+      <Navbar.Brand href="/">Aviation WX Canada</Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link className="active" href="#home">Home</Nav.Link>
-        <Nav.Link href="#">About</Nav.Link>
-        <Nav.Link href="#">Weather</Nav.Link>
-        <Nav.Link href="#">File a Flight Plan</Nav.Link>
+        <Nav.Link className="active" href="/">Home</Nav.Link>
+        <Nav.Link href="/weather">Weather</Nav.Link>
+        <Nav.Link href="/flight">File a Flight Plan</Nav.Link>
       </Nav>
       <Nav className="navbar-right">
-        <Nav.Link href="#">Sign Up</Nav.Link>
-        <Nav.Link href="#">Login</Nav.Link>
+        <Nav.Link href="/register">Sign Up</Nav.Link>
+        <Nav.Link href="/login">Login</Nav.Link>
       </Nav>
     </Navbar>
   </header>;
