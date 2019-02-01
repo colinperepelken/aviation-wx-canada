@@ -6,3 +6,13 @@
 #app-body .card button {
   width: 80%;
 }
+
+@media (max-width: 550px) {
+  .carousel-caption h3 {
+    font-size: 12px;
+  }
+
+  .carousel-caption p {
+    font-size: 8px;
+  }
+}
