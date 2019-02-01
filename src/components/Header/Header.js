@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 
 class Header extends Component {
@@ -25,8 +24,12 @@ class Header extends Component {
         </LinkContainer>
       </Nav>
       <Nav className="navbar-right">
-        <Nav.Link className={(this.state.active === "register") ? "active" : ""} href="/register">Sign Up</Nav.Link>
-        <Nav.Link className={(this.state.active === "login") ? "active" : ""} href="/login">Login</Nav.Link>
+        <LinkContainer to="/register">
+          <Nav.Link className={(this.state.active === "register") ? "active" : ""}>Sign Up</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/login">
+          <Nav.Link className={(this.state.active === "login") ? "active" : ""}>Login</Nav.Link>
+        </LinkContainer>
       </Nav>
     </Navbar>
   </header>;
