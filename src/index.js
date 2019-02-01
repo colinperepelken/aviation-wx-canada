@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-import Weather from './components/Weather/Weather';
+import Weather from './containers/Weather/Weather';
+import Flight from './containers/Flight/Flight';
+import Register from './containers/Register/Register';
+import Login from './containers/Login/Login';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -11,6 +15,9 @@ const routing = (
     <div>
       <Route exact path="/" component={App} />
       <Route path="/weather" component={Weather} />
+      <Route path="/flight" component={Flight} />
+      <Route path="/register" component={Register} />
+      <Route path="/login" component={Login} />
     </div>
   </Router>
 );
