@@ -21,8 +21,8 @@ class Header extends Component {
         <Nav.Link href="#">Sign Up</Nav.Link>
         <Nav.Link href="#">Login</Nav.Link>
       </Nav>
-    </Navbar>;
-  </header>
+    </Navbar>
+  </header>;
   }
 }
 
