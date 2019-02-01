@@ -13,7 +13,7 @@ class Header extends Component {
     return <header>
       <Navbar bg="primary" variant="dark">
       <LinkContainer to="/">
-        <Navbar.Brand href="/">Aviation WX Canada</Navbar.Brand>
+        <Navbar.Brand href="/">Aviation Wx Canada</Navbar.Brand>
       </LinkContainer>
       <Nav className="mr-auto">
         <LinkContainer to="/weather">
