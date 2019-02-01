@@ -11,7 +11,7 @@ class Header extends Component {
 
   render() {
     return <header>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="primary" variant="dark" expand="lg">
       <LinkContainer to="/">
         <Navbar.Brand href="/">Aviation Wx Canada</Navbar.Brand>
       </LinkContainer>
@@ -19,9 +19,7 @@ class Header extends Component {
         <LinkContainer to="/weather">
           <Nav.Link className={(this.state.active === "weather") ? "active" : ""}>Weather</Nav.Link>
         </LinkContainer>
-        <LinkContainer to="/flight">
-          <Nav.Link className={(this.state.active === "flight") ? "active" : ""}>File a Flight Plan</Nav.Link>
-        </LinkContainer>
+        <Nav.Link href="https://plan.navcanada.ca" className={(this.state.active === "flight") ? "active" : ""}>File a Flight Plan</Nav.Link>
       </Nav>
       <Nav className="navbar-right">
         <LinkContainer to="/register">

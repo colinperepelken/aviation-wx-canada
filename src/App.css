@@ -1,1 +1,8 @@
 
+#app-body .card-deck {
+  margin-top: 2rem;
+}
+
+#app-body .card button {
+  width: 80%;
+}

@@ -1,16 +1,16 @@
 
-img.card-img-top {
+#weather-body img.card-img-top {
   height: 100px;
   border: 1px solid grey;
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
 }
 
-.card-title {
+#weather-body .card-title {
   font-size: .9rem;
 }
 
-.card {
+#weather-body .card {
   cursor: pointer;
 }
 
@@ -20,7 +20,7 @@ img.card-img-top {
   margin-right: 1em;
 }
 
-.card-group {
+#weather-body .card-group {
   margin-bottom: 1em;
 }
 
