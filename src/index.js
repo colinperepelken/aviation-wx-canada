@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
 import './index.css';
 import App from './App';
 import Weather from './containers/Weather/Weather';
