@@ -11,13 +11,11 @@
 }
 
 #weather-body .card {
-  cursor: pointer;
-}
-
-#weather-body .card {
   border: 1px solid grey;
   border-radius: .25rem;
-  margin-right: 1em;
+  margin-right: .5em;
+  margin-left: .5em;
+  cursor: pointer;
 }
 
 #weather-body .card-group {

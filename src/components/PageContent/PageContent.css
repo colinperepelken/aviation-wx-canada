@@ -1,5 +1,7 @@
 div#page-content {
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
   margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }

@@ -191,31 +191,26 @@ class Weather extends Component {
           <h2>Additional Links</h2>
           <CardGroup>
             <Card>
-              <Card.Img variant="top" src="images/temp.jpg" />
               <Card.Body className="text-center">
                 <Card.Title>Airport Diagrams</Card.Title>
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src="images/temp.jpg" />
               <Card.Body className="text-center">
                 <Card.Title>U.S. Weather (ADDS)</Card.Title>
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src="images/temp.jpg" />
               <Card.Body className="text-center">
                 <Card.Title>U.S. Weather Cams</Card.Title>
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src="images/temp.jpg" />
               <Card.Body className="text-center">
                 <Card.Title>Sunrise / Sunset (NRC)</Card.Title>
               </Card.Body>
             </Card>
             <Card>
-              <Card.Img variant="top" src="images/temp.jpg" />
               <Card.Body className="text-center">
                 <Card.Title>Notices</Card.Title>
               </Card.Body>
