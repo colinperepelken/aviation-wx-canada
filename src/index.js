@@ -5,6 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import Weather from './containers/Weather/Weather';
+import Metar from './containers/Weather/Metar/Metar';
 import Flight from './containers/Flight/Flight';
 import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
@@ -18,6 +19,7 @@ const routing = (
       <Route path="/flight" component={Flight} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
+      <Route path="/metar" component={Metar} />
     </div>
   </Router>
 );
