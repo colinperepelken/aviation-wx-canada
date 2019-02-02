@@ -12,7 +12,7 @@ class Header extends Component {
 
   render() {
     return <header>
-      <Navbar variant="dark" expand="sm">
+      <Navbar variant="dark" expand="md">
       <LinkContainer to="/">
         <Navbar.Brand href="/">
           <img src="images/logo.png" alt="logo" />
