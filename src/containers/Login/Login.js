@@ -7,8 +7,7 @@ class Login extends Component {
   render() {
     return <React.Fragment>
       <Header active="login" />
-      <PageContent>
-        <h1>Login</h1>
+      <PageContent id="login-body" heading="Login">
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

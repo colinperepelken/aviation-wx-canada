@@ -7,8 +7,7 @@ class Register extends Component {
   render() {
     return <React.Fragment>
       <Header active="register" />
-      <PageContent>
-        <h1>Sign Up</h1>
+      <PageContent id="register-body" heading="Sign Up">
         <Form>
           <Form.Group controlId="formBasicFirstName">
             <Form.Label>First name</Form.Label>

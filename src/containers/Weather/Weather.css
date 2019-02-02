@@ -18,15 +18,11 @@
   cursor: pointer;
 }
 
-#weather-body .card-group {
+#weather-body .card-deck {
   margin-bottom: 1em;
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
+#weather-body h2 {
   font-size: 1.4rem;
   margin-top: 1em;
   margin-bottom: .5em;
