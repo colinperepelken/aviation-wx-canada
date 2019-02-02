@@ -16,7 +16,6 @@ class Header extends Component {
       <LinkContainer to="/">
         <Navbar.Brand href="/">
           <img src="images/logo.png" alt="logo" />
-          AVWx Canada
         </Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
