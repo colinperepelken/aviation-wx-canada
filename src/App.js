@@ -19,7 +19,7 @@ class App extends Component {
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>New AWWS Replacement is Here!</h3>
+                <h3>AWWS replacement is here!</h3>
                 <p>Aviation Wx Canada features a redesigned weather interface optimized for modern browsers and mobile devices.</p>
               </Carousel.Caption>
             </Carousel.Item>
