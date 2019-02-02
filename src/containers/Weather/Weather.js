@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import PageContent from '../../components/PageContent/PageContent';
 import './Weather.css';
 import { Card, CardDeck } from 'react-bootstrap';
@@ -243,6 +244,7 @@ class Weather extends Component {
           </Card>
         </CardDeck>
       </PageContent>
+      <Footer />
     </React.Fragment>
   }
 }

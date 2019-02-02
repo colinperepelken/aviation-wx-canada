@@ -10,6 +10,7 @@ import Metar from './containers/Weather/Metar/Metar';
 import GFA from './containers/Weather/GFA/GFA';
 import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
+import Disclaimer from './containers/Disclaimer/Disclaimer';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -19,6 +20,7 @@ const routing = (
       <Route path="/weather" component={Weather} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
+      <Route path="/disclaimer" component={Disclaimer} />
       <Route path="/metar" component={Metar} />
       <Route path="/gfa" component={GFA} />
     </div>

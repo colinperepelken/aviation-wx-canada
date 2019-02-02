@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import WeatherContent from '../../../components/WeatherContent/WeatherContent';
 import WeatherSubmitCancelButtons from '../../../components/WeatherSubmitCancelButtons/WeatherSubmitCancelButtons';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -37,6 +38,7 @@ class Metar extends Component {
             <WeatherSubmitCancelButtons />
         </Form>
       </WeatherContent>
+      <Footer />
     </React.Fragment>
   }
 }

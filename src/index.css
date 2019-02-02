@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body, #root, #root > div {
+  height: 100%;
+}
+
+#root > div {
+  position: relative;
+}

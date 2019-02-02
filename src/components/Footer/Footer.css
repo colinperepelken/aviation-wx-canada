@@ -1,0 +1,19 @@
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background: #f5f5f5; */
+  color: black;
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer p a:hover {
+  text-decoration: none;
+}

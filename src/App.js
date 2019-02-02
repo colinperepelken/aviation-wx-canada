@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import PageContent from './components/PageContent/PageContent';
 import { Carousel, CardDeck, Card, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -90,6 +91,7 @@ class App extends Component {
           </Card>
         </CardDeck>
       </PageContent>
+      <Footer />
     </React.Fragment>;
   }
 }

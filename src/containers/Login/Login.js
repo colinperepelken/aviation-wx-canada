@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import PageContent from '../../components/PageContent/PageContent';
 import { Form, Button } from 'react-bootstrap';
 
@@ -22,6 +23,7 @@ class Login extends Component {
           </Button>
         </Form>
       </PageContent>
+      <Footer />
     </React.Fragment>
   }
 }
