@@ -89,12 +89,14 @@ class Weather extends Component {
               <Card.Title>Upper Air Analysis</Card.Title>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Img variant="top" src="images/weather/gfa.png" />
-            <Card.Body className="text-center">
-              <Card.Title>Graphical Area Forecast (GFA)</Card.Title>
-            </Card.Body>
-          </Card>
+          <LinkContainer to="/gfa">
+            <Card>
+              <Card.Img variant="top" src="images/weather/gfa.png" />
+              <Card.Body className="text-center">
+                <Card.Title>Graphical Area Forecast (GFA)</Card.Title>
+              </Card.Body>
+            </Card>
+          </LinkContainer>
           <Card>
             <Card.Img variant="top" src="images/weather/asep.png" />
             <Card.Body className="text-center">
@@ -104,31 +106,31 @@ class Weather extends Component {
         </CardDeck>
         <CardDeck>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/wx_cams.png" />
             <Card.Body className="text-center">
               <Card.Title>Weather Cams</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/sig_hi_wx.png" />
             <Card.Body className="text-center">
               <Card.Title>Significant High Level Weather</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/can_turb.png" />
             <Card.Body className="text-center">
               <Card.Title>Canadian Turbulence Forecast</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/west_coast.png" />
             <Card.Body className="text-center">
               <Card.Title>Local Graphic Forecast West Coast</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/comox.png" />
             <Card.Body className="text-center">
               <Card.Title>Comox (DND) Charts</Card.Title>
             </Card.Body>
@@ -136,31 +138,31 @@ class Weather extends Component {
         </CardDeck>
         <CardDeck>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/upper_below_180.png" />
             <Card.Body className="text-center">
               <Card.Title>Upper Winds &le; FL180</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/sig_wx_atlantic.png" />
             <Card.Body className="text-center">
               <Card.Title>Significant Weather Atlantic</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/n_atlc_e.png" />
             <Card.Body className="text-center">
               <Card.Title>N ATLC Turbulence Eastbound</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/n_atlc_w.png" />
             <Card.Body className="text-center">
-              <Card.Title>Radar</Card.Title>
+              <Card.Title>N ATLC Turbulence Westbound</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/upper_winds_high.png" />
             <Card.Body className="text-center">
               <Card.Title>Upper Winds FL240 to FL450</Card.Title>
             </Card.Body>
@@ -168,19 +170,19 @@ class Weather extends Component {
         </CardDeck>
         <CardDeck>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/sfc_analysis.png" />
             <Card.Body className="text-center">
               <Card.Title>Surface Analysis</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/radar.png" />
             <Card.Body className="text-center">
-              <Card.Title>N ATLC Turbulence Westbound</Card.Title>
+              <Card.Title>Radar</Card.Title>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/temp.jpg" />
+            <Card.Img variant="top" src="images/weather/satellite.png" />
             <Card.Body className="text-center">
               <Card.Title>Satellite</Card.Title>
             </Card.Body>

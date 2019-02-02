@@ -25,6 +25,7 @@ class Metar extends Component {
                 label="Standard"
                 name="formHorizontalRadios"
                 id="formHorizontalRadios1"
+                checked
               />
               <Form.Check
                 type="radio"

@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import Weather from './containers/Weather/Weather';
 import Metar from './containers/Weather/Metar/Metar';
+import GFA from './containers/Weather/GFA/GFA';
 import Register from './containers/Register/Register';
 import Login from './containers/Login/Login';
 import * as serviceWorker from './serviceWorker';
@@ -19,6 +20,7 @@ const routing = (
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
       <Route path="/metar" component={Metar} />
+      <Route path="/gfa" component={GFA} />
     </div>
   </Router>
 );

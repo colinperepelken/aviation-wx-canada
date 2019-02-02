@@ -1,0 +1,7 @@
+header .navbar {
+  background-image: linear-gradient(to bottom, #346dc9, #234a89);
+}
+
+header .navbar-brand > img {
+  height: 35px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import './Header.css';
 
 class Header extends Component {
 
@@ -11,9 +12,12 @@ class Header extends Component {
 
   render() {
     return <header>
-      <Navbar bg="primary" variant="dark" expand="sm">
+      <Navbar variant="dark" expand="sm">
       <LinkContainer to="/">
-        <Navbar.Brand href="/">Aviation Wx Canada</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src="images/logo.png" alt="logo" />
+          AVWx Canada
+        </Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
