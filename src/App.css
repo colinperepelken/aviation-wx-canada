@@ -11,3 +11,7 @@
     font-size: 8px;
   }
 }
+
+#app-body .card img {
+  cursor: pointer;
+}

@@ -47,7 +47,9 @@ class App extends Component {
         </Carousel>
         <CardDeck>
           <Card>
-            <Card.Img variant="top" src="images/frontpage/weather.jpg" />
+            <LinkContainer to="/weather">
+              <Card.Img variant="top" src="images/frontpage/weather.jpg" />
+            </LinkContainer>
             <Card.Body>
               <Card.Title>Weather</Card.Title>
               <Card.Text>
@@ -61,7 +63,9 @@ class App extends Component {
 
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/frontpage/flight.jpg" />
+            <a href="https://plan.navcanada.ca">
+              <Card.Img variant="top" src="images/frontpage/flight.jpg" />
+            </a>
             <Card.Body>
               <Card.Title>File a Flight Plan</Card.Title>
               <Card.Text>
@@ -71,7 +75,9 @@ class App extends Component {
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src="images/frontpage/account.jpg" />
+            <LinkContainer to="/login">
+              <Card.Img variant="top" src="images/frontpage/account.jpg" />
+            </LinkContainer>
             <Card.Body>
               <Card.Title>User Accounts</Card.Title>
               <Card.Text>
