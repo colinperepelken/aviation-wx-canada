@@ -13,9 +13,13 @@
 #weather-body .card {
   border: 1px solid grey;
   border-radius: .25rem;
-  margin-right: .5em;
-  margin-left: .5em;
   cursor: pointer;
+}
+
+#weather-body .card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
 
 #weather-body .card:hover {
