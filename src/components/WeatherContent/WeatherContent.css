@@ -1,4 +1,4 @@
-div#page-content {
+div#weather-content {
   max-width: 950px;
   margin: auto;
   margin-top: 2em;
@@ -9,11 +9,16 @@ div#page-content {
   padding-bottom: 2em;
 }
 
-div#page-content h1 {
+div#weather-content h1 {
   font-size: 1.8rem;
 }
 
 .indented-content {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+#weather-content .breadcrumb {
+  background-color: transparent;
+  margin-bottom: .2em;
 }

@@ -1,21 +1,41 @@
 import React, { Component } from 'react';
 import Header from '../../../components/Header/Header';
-import PageContent from '../../../components/PageContent/PageContent';
+import WeatherContent from '../../../components/WeatherContent/WeatherContent';
+import WeatherSubmitCancelButtons from '../../../components/WeatherSubmitCancelButtons/WeatherSubmitCancelButtons';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Breadcrumb} from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 class Metar extends Component {
   render() {
     return <React.Fragment>
       <Header active="Weather" />
-      <PageContent>
-        <Breadcrumb>
-          <LinkContainer to="/"><Breadcrumb.Item>Home</Breadcrumb.Item></LinkContainer>
-          <LinkContainer to="/weather"><Breadcrumb.Item>Weather</Breadcrumb.Item></LinkContainer>
-          <Breadcrumb.Item active>METAR / TAF</Breadcrumb.Item>
-        </Breadcrumb>
-        <h1>METAR / TAF</h1>
-      </PageContent>
+      <WeatherContent heading="METAR / TAF">
+        <Form>
+          <Form.Group controlId="formBasicAerodrome">
+            <Form.Label>ICAO code(s)</Form.Label>
+            <Form.Control required type="text" placeholder="Enter ICAO code(s)" />
+            <Form.Text className="text-muted">
+              Enter aerodrome ID(s), separated by a space (e.g. CYUL CYYZ CYVR).
+            </Form.Text>
+          </Form.Group>
+          <Form.Group >
+              <Form.Label>Select an output format</Form.Label>
+              <Form.Check
+                type="radio"
+                label="Standard"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios1"
+              />
+              <Form.Check
+                type="radio"
+                label="Plain language"
+                name="formHorizontalRadios"
+                id="formHorizontalRadios2"
+              />
+            </Form.Group>
+            <WeatherSubmitCancelButtons />
+        </Form>
+      </WeatherContent>
     </React.Fragment>
   }
 }
